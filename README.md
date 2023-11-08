@@ -40,3 +40,8 @@
     - **SnackBar (ScaffoldMessenger)**: Menampilkan snackbar yang berisi teks yang menandakan bahwa card telah di-*click*.
 
 **3. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)**  
+#### 1. **Membuat tiga tombol sederhana Lihat Item, Tambah Item, dan Logout dengan ikon dan teks**
+Pertama, membuat class MyHomePage yang bersifat stateless karena isi dari home page nya tidak berganti-ganti. Lalu membuat class ShopItem untuk mendefinisikan data yang dibutuhkan untuk card tombol nya, setelah itu baru menambahkan list item dalam MyHomePage yang terdiri dari nama card beserta icon nya: "Lihat Item" dengan icon checklist, "Tambah Item" dengan icon cart, dan "Logout" dengan icon logout. Class MyHomePage juga mengatur grid penampilan dari cards yang ada. Kemudian akan ditambahkan class ShopCard yang menampilkan items dalam bentuk card.
+
+#### 2. **Memunculkan Snackbar ketika tombol di-*click***
+Pada class ShopCard, telah ditambahkan juga function onTap yang bertujuan untuk menampilkan snackbar ketika tombol nya di-*click*.
