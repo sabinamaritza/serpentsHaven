@@ -1,16 +1,42 @@
 # serpentshaven
+<br>
 
-A new Flutter project.
+### Tugas 1
+---
+<br>
 
-## Getting Started
+**1. Apa perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi Flutter?**  
+**Stateless widget** merupakan widget yang tidak bisa diganti (immutable) sehingga data yang di display tidak akan berganti seperti teks judul, sedangkan **stateful widget** merupakan widget yang dapat diganti (mutable) sehingga widget bisa memegang data yang dapat berganti seperti sebuah counter.
 
-This project is a starting point for a Flutter application.
+**2. Sebutkan seluruh widget yang kamu gunakan untuk menyelesaikan tugas ini dan jelaskan fungsinya masing-masing.**  
 
-A few resources to get you started if this is your first Flutter project:
+#### **1. MaterialApp**
+- **Function**: Root dari widget di dalam aplikasi, menyediakan *setting* seperti theme, title, dan home screen.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#### 2. **Scaffold**
+- **Function**: Mengatur struktur layout home page secara visual.
+- **Sub-widgets**:
+    - **AppBar**: Memunculkan toolbar dengan judul.
+    - **Body (SingleChildScrollView)**: Container *scrollable* sehingga bisa di-*scroll* jika kontennya melebihi batas ukuran layar.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### 3. **Column**
+- **Function**: Mengatur children nya secara vertikal.
+- **Sub-widget**: 
+    - **Padding**: Menambahkan padding di sekitar widget.
+    - **Text**: Memunculkan teks.
+
+#### 4. **GridView**
+- **Function**: Menampilkan widget dalam array 2D yang bisa di *scroll*.
+- **Sub-widget**:
+    - **ShopCard (mapped items)**: Membuat list *cards* berdasarkan list **items**.
+
+#### 5. **ShopCard (Custom Widget)**
+- **Function**: Merepresentasikan setiap item dalam bentuk card.
+- **Sub-widgets**:
+    - **Material (InkWell)**: Menambahkan efek **tap** untuk card.
+    - **Container**: Membuat container persegi untuk mengelompokkan konten dari card.
+    - **Icon**: Menampilkan **icon** dari item
+    - **Text**: Menampilkan **nama** dari item.
+    - **SnackBar (ScaffoldMessenger)**: Menampilkan snackbar yang berisi teks yang menandakan bahwa card telah di-*click*.
+
+**3. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)**  
