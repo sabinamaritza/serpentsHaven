@@ -3,7 +3,6 @@
 
 ### Tugas 1
 ---
-<br>
 
 **1. Apa perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi Flutter?**  
 **Stateless widget** merupakan widget yang tidak bisa diganti (immutable) sehingga data yang di display tidak akan berganti seperti teks judul, sedangkan **stateful widget** merupakan widget yang dapat diganti (mutable) sehingga widget bisa memegang data yang dapat berganti seperti sebuah counter.
@@ -45,3 +44,17 @@ Pertama, membuat class MyHomePage yang bersifat stateless karena isi dari home p
 
 #### 2. **Memunculkan Snackbar ketika tombol di-*click***
 Pada class ShopCard, telah ditambahkan juga function onTap yang bertujuan untuk menampilkan snackbar ketika tombol nya di-*click*.
+
+<br>
+
+### Tugas 2
+---
+**Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement(), disertai dengan contoh mengenai penggunaan kedua metode tersebut yang tepat!**
+
+**Jelaskan masing-masing layout widget pada Flutter dan konteks penggunaannya masing-masing!**
+
+**Sebutkan apa saja elemen input pada form yang kamu pakai pada tugas kali ini dan jelaskan mengapa kamu menggunakan elemen input tersebut!**
+
+**Bagaimana penerapan clean architecture pada aplikasi Flutter?**
+
+**Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial)**
