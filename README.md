@@ -245,6 +245,10 @@ if (item.name == "Tambah Item") {
 Pada file `shoplist_form.dart`, ditambahkan AlertDialog dengan child Column yang mengatur children Text berisi nama, harga, dan deskripsi.
 
 #### 4. **Membuat sebuah drawer pada aplikasi dengan ketentuan sebagai berikut:**
-* Drawer minimal memiliki dua buah opsi, yaitu Halaman Utama dan Tambah Item.
-* Ketika memiih opsi Halaman Utama, maka aplikasi akan mengarahkan pengguna ke halaman utama.
-* Ketika memiih opsi (Tambah Item), maka aplikasi akan mengarahkan pengguna ke halaman form tambah item baru.
+Membuat file `left_drawer.dart` yang berfungsi untuk menampilkan drawer dan menavigasi pengguna ke halaman `menu.dart` dan `shoplist_form.dart`
+
+* Drawer minimal memiliki dua buah opsi, yaitu Halaman Utama dan Tambah Item.  
+Menambahkan ListTile pada Drawer dengan nama Halaman Utama dan Tambah Item
+* Ketika memiih opsi Halaman Utama, maka aplikasi akan mengarahkan pengguna ke halaman utama.  
+
+* Ketika memiih opsi (Tambah Item), maka aplikasi akan mengarahkan pengguna ke halaman form tambah item baru.  
