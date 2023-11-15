@@ -220,15 +220,29 @@ Clean Architecture adalah konsep arsitektur software yang bertujuan untuk memisa
 
 **5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial)**
 #### 1. **Membuat minimal satu halaman baru pada aplikasi, yaitu halaman formulir tambah item baru dengan ketentuan sebagai berikut:**
-* Memakai minimal tiga elemen input, yaitu name, amount, description. Tambahkan elemen input sesuai dengan model pada aplikasi tugas Django yang telah kamu buat.
-* Memiliki sebuah tombol Save.
+* Memakai minimal tiga elemen input, yaitu name, amount, description. Tambahkan elemen input sesuai dengan model pada aplikasi tugas Django yang telah kamu buat.  
+Pertama, dibuat class baru untuk menampilkan page penambahan item baru. Dalam class tersebut, ditambahkan 3 variabel untuk menyimpan input pengguna: name, amount, dan description. Lalu, dibuat Form dengan child TextFormField untuk setiap variabel yang posisi nya diatur dengan Column.
+
+* Memiliki sebuah tombol Save.  
+Lalu, ditambahkan button Save yang di-align center. Button ini dibuat sehingga jika pengguna menekan tombol nya, Form akan di-validasi, dan menampilkan message jika ada error, dan jika semua elemen input tidak memiliki masalah, akan muncul sebuah dialog box yang berisi nama, harga, dan deskripsi dari item yang ditambah. Setelah itu, form input akan di-*reset*.
+
 * Setiap elemen input di formulir juga harus divalidasi dengan ketentuan sebagai berikut:
-    * Setiap elemen input tidak boleh kosong.
-    * Setiap elemen input harus berisi data dengan tipe data atribut modelnya.
+    * Setiap elemen input tidak boleh kosong.  
+    Hal-hal berikut akan di-*check* dengan membuat validator. Jika String nama, harga, atau deskripsi kosong, akan di-*return* "*nama field* tidak boleh kosong".
+    * Setiap elemen input harus berisi data dengan tipe data atribut modelnya.  
+    Untuk field harga, dipastikan dia berupa integer dengan cara melakukan parse kepada value yang di-*input* pengguna.
 
-#### 2. **Mengarahkan pengguna ke halaman form tambah item baru ketika menekan tombol Tambah Item pada halaman utama.**
+#### 2. **Mengarahkan pengguna ke halaman form tambah item baru ketika menekan tombol Tambah Item pada halaman utama.**  
+Hal ini dilakukan dengan cara menambahkan barisan berikut ke dalam `shop_card.dart` untuk di-cek apakah button yang di-*click* memiliki nama "Tambah Item"
+```dart
+if (item.name == "Tambah Item") {
+  Navigator.push(context,
+    MaterialPageRoute(builder: (context) => const ShopFormPage()));
+}
+```
 
-#### 3. **Memunculkan data sesuai isi dari formulir yang diisi dalam sebuah pop-up setelah menekan tombol Save pada halaman formulir tambah item baru.**
+#### 3. **Memunculkan data sesuai isi dari formulir yang diisi dalam sebuah pop-up setelah menekan tombol Save pada halaman formulir tambah item baru.**  
+Pada file `shoplist_form.dart`, ditambahkan AlertDialog dengan child Column yang mengatur children Text berisi nama, harga, dan deskripsi.
 
 #### 4. **Membuat sebuah drawer pada aplikasi dengan ketentuan sebagai berikut:**
 * Drawer minimal memiliki dua buah opsi, yaitu Halaman Utama dan Tambah Item.
