@@ -58,3 +58,18 @@ Pada class ShopCard, telah ditambahkan juga function onTap yang bertujuan untuk 
 **Bagaimana penerapan clean architecture pada aplikasi Flutter?**
 
 **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial)**
+#### 1. **Membuat minimal satu halaman baru pada aplikasi, yaitu halaman formulir tambah item baru dengan ketentuan sebagai berikut:**
+* Memakai minimal tiga elemen input, yaitu name, amount, description. Tambahkan elemen input sesuai dengan model pada aplikasi tugas Django yang telah kamu buat.
+* Memiliki sebuah tombol Save.
+* Setiap elemen input di formulir juga harus divalidasi dengan ketentuan sebagai berikut:
+    * Setiap elemen input tidak boleh kosong.
+    * Setiap elemen input harus berisi data dengan tipe data atribut modelnya.
+
+#### 2. **Mengarahkan pengguna ke halaman form tambah item baru ketika menekan tombol Tambah Item pada halaman utama.**
+
+#### 3. **Memunculkan data sesuai isi dari formulir yang diisi dalam sebuah pop-up setelah menekan tombol Save pada halaman formulir tambah item baru.**
+
+#### 4. **Membuat sebuah drawer pada aplikasi dengan ketentuan sebagai berikut:**
+* Drawer minimal memiliki dua buah opsi, yaitu Halaman Utama dan Tambah Item.
+* Ketika memiih opsi Halaman Utama, maka aplikasi akan mengarahkan pengguna ke halaman utama.
+* Ketika memiih opsi (Tambah Item), maka aplikasi akan mengarahkan pengguna ke halaman form tambah item baru.
