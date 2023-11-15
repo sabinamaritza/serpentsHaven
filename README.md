@@ -248,7 +248,8 @@ Pada file `shoplist_form.dart`, ditambahkan AlertDialog dengan child Column yang
 Membuat file `left_drawer.dart` yang berfungsi untuk menampilkan drawer dan menavigasi pengguna ke halaman `menu.dart` dan `shoplist_form.dart`
 
 * Drawer minimal memiliki dua buah opsi, yaitu Halaman Utama dan Tambah Item.  
-Menambahkan ListTile pada Drawer dengan nama Halaman Utama dan Tambah Item
+Menambahkan ListTile pada Drawer dengan nama Halaman Utama dan Tambah Item beserta icon yang sesuai.
 * Ketika memiih opsi Halaman Utama, maka aplikasi akan mengarahkan pengguna ke halaman utama.  
-
+Menggunakan Navigator.pushReplacement untuk me-redirect ke halaman menu.dart
 * Ketika memiih opsi (Tambah Item), maka aplikasi akan mengarahkan pengguna ke halaman form tambah item baru.  
+Menggunakan Navigator.push untuk me-redirect ke halaman shoplist_form.dart
