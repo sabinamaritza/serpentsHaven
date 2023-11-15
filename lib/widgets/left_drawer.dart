@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:serpentshaven/menu.dart';
+import 'package:serpentshaven/screens/menu.dart';
+import 'package:serpentshaven/screens/shoplist_form.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -11,7 +12,7 @@ class LeftDrawer extends StatelessWidget {
         children: [
           const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.indigo,
+                color: Colors.green,
               ),
               child: Column(
                 children: [
@@ -53,10 +54,8 @@ class LeftDrawer extends StatelessWidget {
             title: const Text('Tambah Produk'),
             // Bagian redirection ke ShopFormPage
             onTap: () {
-              /*
-              TODO: Buatlah routing ke ShopFormPage di sini,
-              setelah halaman ShopFormPage sudah dibuat.
-              */
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ShopFormPage()));
             },
           ),
         ],
