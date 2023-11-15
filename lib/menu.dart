@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:serpentshaven/widgets/left_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
@@ -14,7 +15,10 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Snake Inventory'),
+        backgroundColor: Colors.green.shade900,
+        foregroundColor: Colors.white,
       ),
+      drawer: const LeftDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10.0),

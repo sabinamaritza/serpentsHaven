@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:serpentshaven/snake.dart';
+import 'package:serpentshaven/menu.dart';
 
 void main() {
   runApp(const MyApp());
