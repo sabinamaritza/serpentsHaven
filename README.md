@@ -468,19 +468,19 @@ Mekanisme autentikasi yang dijelaskan melibatkan interaksi antara aplikasi Flutt
 
 **6. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial).**
 1. Membuat halaman login pada proyek tugas Flutter.  
+  Halaman login pada Flutter dapat dibuat dengan menggunakan widget `Scaffold` sebagai kerangka utama dan menambahkan elemen-elemen UI seperti `TextField`, `ElevatedButton`, dan lainnya. Hal pertama yang dilakukan adalah meng-import package dan widget yang deiperlukan. Lalu membuat class LoginApp yang meng-extend Stateless Widget dan class LoginPage yang meng-extend Stateful Widget. Setelah itu, menambahkan elemen-elemen `TextField` dan `ElevatedButton` untuk mengambil input dari pengguna dan melakukan proses login. Lalu menambahkan `TextEditingController` pada class `_LoginPageState` untuk mengontrol input dari `TextField`. Widget `Scaffold` digunakan sebagai kerangka utama dan menyusun elemen-elemen UI sesuai kebutuhan. Pada contoh ini, digunakan dua `TextField` untuk username dan password, serta satu `ElevatedButton` untuk mengeksekusi proses login.
 
 2. Mengintegrasikan sistem autentikasi Django dengan proyek tugas Flutter.  
 
+
 3. Membuat model kustom sesuai dengan proyek aplikasi Django.  
 
+
 4. Membuat halaman yang berisi daftar semua item yang terdapat pada endpoint JSON di Django yang telah kamu deploy.  
+  * Tampilkan name, amount, dan description dari masing-masing item pada halaman ini.  
 
-5. Tampilkan name, amount, dan description dari masing-masing item pada halaman ini.  
-
-6. Membuat halaman detail untuk setiap item yang terdapat pada halaman daftar Item.  
-
-7. Halaman ini dapat diakses dengan menekan salah satu item pada halaman daftar Item.  
-
-8. Tampilkan seluruh atribut pada model item kamu pada halaman ini.  
-
-9. Tambahkan tombol untuk kembali ke halaman daftar item.  
+  
+5. Membuat halaman detail untuk setiap item yang terdapat pada halaman daftar Item.  
+  * Halaman ini dapat diakses dengan menekan salah satu item pada halaman daftar Item.  
+  * Tampilkan seluruh atribut pada model item kamu pada halaman ini.  
+  * Tambahkan tombol untuk kembali ke halaman daftar item.  
